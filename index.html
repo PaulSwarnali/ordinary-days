@@ -35,10 +35,9 @@ align-items:center;
 
 min-height:100vh;
 
-padding:30px;
+padding:20px;
 
 overflow-x:hidden;
-overflow-y:auto;
 
 }
 
@@ -52,9 +51,11 @@ background:white;
 
 border-radius:28px;
 
-padding:clamp(30px,6vw,60px);
+padding:clamp(28px,7vw,60px);
 
-box-shadow: 0 10px 25px rgba(0,0,0,.06), 0 30px 80px rgba(0,0,0,.08);
+box-shadow:
+0 10px 25px rgba(0,0,0,.06),
+0 30px 80px rgba(0,0,0,.08);
 
 position:relative;
 
@@ -66,11 +67,11 @@ overflow:hidden;
 
 position:absolute;
 
-top:25px;
+top:22px;
 
-right:30px;
+right:22px;
 
-font-size:12px;
+font-size:10px;
 
 letter-spacing:2px;
 
@@ -98,31 +99,31 @@ h1{
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:54px;
+font-size:clamp(38px,10vw,54px);
 
 color:#205a46;
 
 font-weight:600;
 
-margin-bottom:30px;
+margin-bottom:25px;
 
 }
 
 p{
 
-font-size:20px;
+font-size:clamp(16px,4vw,18px);
 
-line-height:1.9;
+line-height:1.8;
 
 color:#355e4b;
 
-margin-bottom:18px;
+margin-bottom:16px;
 
 }
 
 button{
 
-margin-top:30px;
+margin-top:25px;
 
 background:#2e8b57;
 
@@ -130,11 +131,15 @@ color:white;
 
 border:none;
 
-padding:16px 34px;
+padding:15px 28px;
 
-font-weight:500; letter-spacing:.3px;
+border-radius:999px;
 
-font-size:17px;
+font-size:16px;
+
+font-weight:500;
+
+letter-spacing:.3px;
 
 cursor:pointer;
 
@@ -242,6 +247,22 @@ font-style:italic;
 
 }
 
+@media(max-width:480px){
+
+.card{
+
+border-radius:22px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -252,7 +273,9 @@ font-style:italic;
 <div class="leaf">🍃</div>
 <div class="leaf">🌱</div>
 
+
 <div class="card">
+
 
 <div class="corner">
 
@@ -260,39 +283,35 @@ made with love • august 2026
 
 </div>
 
+
 <!-- PAGE 1 -->
 
 <div class="page active">
 
 <h1>Hi, My Love.</h1>
 
-<p>
 
+<p>
 This isn't for our anniversary.
-
 </p>
 
 <p>
-
 It's not your birthday.
-
 </p>
 
 <p>
-
-And it's definitely not because I needed a reason.
-
+It's not a special occasion.
 </p>
 
 <p>
-
-I just woke up today...
-
-and wanted to make something
-
-that would make you smile.
-
+It's just a random day...
 </p>
+
+<p>
+and I wanted to make something
+that reminds you how much you mean to me.
+</p>
+
 
 <button onclick="nextPage()">
 
@@ -302,111 +321,113 @@ Open my letter 💚
 
 </div>
 
+
 <!-- PAGE 2 -->
+
 
 <div class="page">
 
-<h1>Ordinary Days</h1>
+<h1>The Little Things</h1>
+
 
 <p>
-
-People think love lives
-
-inside grand gestures.
-
+I think love is not always
+about the big moments.
 </p>
+
 
 <p>
-
-I don't think so.
-
+It's in the small things.
 </p>
+
 
 <p>
-
-I think love is remembering
-
-how you like your coffee.
-
+The random conversations.
 </p>
+
 
 <p>
-
-Saving a meme because
-
-"I know she'll laugh."
-
+The silly jokes.
 </p>
+
 
 <p>
-
-Or seeing something beautiful
-
-and immediately wishing
-
-you were there.
-
+Choosing each other,
+every single day.
 </p>
+
+
+<p>
+The moments where I look at you
+and think...
+</p>
+
+
+<p>
+"How did I get so lucky?"
+</p>
+
 
 <button onclick="nextPage()">
 
 Next →
 
 </button>
+
 
 </div>
 
+
 <!-- PAGE 3 -->
+
 
 <div class="page">
 
-<h1>Something I Hope You Know</h1>
+<h1>Something I Want You To Know</h1>
+
 
 <p>
-
-I'm still learning.
-
+I know I am still learning.
 </p>
 
+
 <p>
-
-Still growing.
-
+Learning how to love you better.
 </p>
 
+
 <p>
-
-Still becoming
-
-the partner I want to be.
-
+Learning how to understand you better.
 </p>
 
-<p>
 
+<p>
+Learning how to be the partner
+YOU deserve.
+</p>
+
+
+<p>
 I won't always get everything right.
-
 </p>
+
 
 <p>
-
-But I hope one thing
-
-never changes—
-
+But I promise...
 </p>
+
 
 <p>
-
-I'll never stop trying.
-
+<strong>I WILL ALWAYS TRY.</strong>
 </p>
+
 
 <button onclick="nextPage()">
 
 Next →
 
 </button>
+
 
 </div>
 
@@ -416,43 +437,53 @@ Next →
 
 <h1>My Favourite Future</h1>
 
-<p>
-
-When I think about the future...
-
-</p>
 
 <p>
-
-I don't imagine perfection.
-
+When I think about my future...
 </p>
+
 
 <p>
-
-I imagine grocery shopping together.
-
+I don't imagine a perfect life.
 </p>
+
 
 <p>
-
-Arguing over what to eat.
-
+I imagine a real one.
 </p>
+
 
 <p>
-
-Watching movies we'll probably never finish.
-
+Lazy mornings,
+waking up with you beside me.
 </p>
+
 
 <p>
-
-Growing older...
-
-without ever growing apart.
-
+Random cafe visits.
 </p>
+
+
+<p>
+Random country visits with you.
+</p>
+
+
+<p>
+Fighting over silly things.
+</p>
+
+
+<p>
+Laughing about things
+only we understand.
+</p>
+
+
+<p>
+<strong>AND COMING BACK HOME TO YOU.</strong>
+</p>
+
 
 <button onclick="nextPage()">
 
@@ -460,51 +491,53 @@ Next →
 
 </button>
 
+
 </div>
 
+
 <!-- PAGE 5 -->
+
 
 <div class="page">
 
 <h1>Thank You.</h1>
 
-<p>
-
-Thank you...
-
-</p>
 
 <p>
-
-For loving me.
-
+Thank you for being you.
 </p>
+
 
 <p>
-
-For laughing with me.
-
+Thank you for your patience.
 </p>
+
 
 <p>
-
-For believing in us.
-
+Thank you for your love.
 </p>
+
 
 <p>
-
-Being with you
-
-makes me want
-
-to become a kinder,
-
-stronger,
-
-better partner every single day.
-
+Thank you for choosing me.
 </p>
+
+
+<p>
+Being with you makes me want
+to become a better version of myself.
+</p>
+
+
+<p>
+Not because I have to.
+</p>
+
+
+<p>
+<strong>BECAUSE I WANT TO.</strong>
+</p>
+
 
 <button onclick="nextPage()">
 
@@ -512,65 +545,60 @@ One Last Page 💚
 
 </button>
 
+
 </div>
+
 
 <!-- PAGE 6 -->
 
+
 <div class="page">
 
-<h1>Just One More Thing...</h1>
+<h1>One More Thing...</h1>
+
 
 <p>
-
-I hope,
-
-years from now,
-
-we somehow find this page again.
-
+I hope years from now,
+we find this little page again.
 </p>
+
 
 <p>
-
-And smile.
-
+Maybe we'll laugh at how simple it was.
 </p>
+
 
 <p>
-
-Because everything written here
-
-will still be true.
-
+Maybe we'll remember this random day.
 </p>
+
 
 <p>
-
-You are my favourite person.
-
+But I hope one thing stays the same...
+or maybe becomes even better.
 </p>
+
 
 <p>
-
-My safest place.
-
+That we are still choosing each other.
 </p>
+
 
 <p>
-
-And the best part
-
-of my ordinary days.
-
+Again and again.
 </p>
+
 
 <div class="signature">
 
-With all my love,<br>
+With all my love,<br><br>
+
+Yours and only yours,<br>
 
 Swarnali 💚
 
 </div>
+
 
 <button onclick="finishLetter()">
 
@@ -578,69 +606,82 @@ Close the Letter 🌿
 
 </button>
 
+
 </div>
 
+
 <!-- FINAL PAGE -->
+
 
 <div class="page">
 
 <h1>💚</h1>
 
-<p>
-
-This page will always be here.
-
-</p>
 
 <p>
-
-Just like me.
-
+If life ever feels too loud...
 </p>
+
 
 <p>
-
-Whenever life gets noisy,
-or difficult,
-or beautifully ordinary...
-
+come back here.
 </p>
+
 
 <p>
-
-Come back here.
-
+Remember this:
 </p>
+
 
 <p>
-
-And remember—
-
+Out of all the billions of people
+in this world,
 </p>
 
-<p style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#205a46;">
 
-You are loved.
-
-Every single day.
-
+<p>
+you are my favourite person.
 </p>
+
+
+<p>
+My safest place.
+</p>
+
+
+<p>
+My home.
+</p>
+
+
+<p>
+And my favourite part
+of every ordinary day.
+</p>
+
 
 <div class="signature">
+
+Made with love.<br><br>
 
 04 August 2026 🌿
 
 </div>
 
-</div>
 
 </div>
+
+
+</div>
+
 
 <script>
+
 
 const pages=document.querySelectorAll(".page");
 
 let current=0;
+
 
 function nextPage(){
 
@@ -660,6 +701,7 @@ behavior:"smooth"
 
 }
 
+
 function finishLetter(){
 
 pages[current].classList.remove("active");
@@ -670,7 +712,9 @@ pages[current].classList.add("active");
 
 }
 
+
 </script>
+
 
 </body>
 
