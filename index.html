@@ -1,1 +1,679 @@
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For You 💚</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:linear-gradient(180deg,#eef8f0,#e3f5e8);
+
+font-family:'Inter',sans-serif;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+padding:30px;
+
+overflow-x:hidden;
+overflow-y:auto;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:720px;
+
+background:white;
+
+border-radius:28px;
+
+padding:clamp(30px,6vw,60px);
+
+box-shadow: 0 10px 25px rgba(0,0,0,.06), 0 30px 80px rgba(0,0,0,.08);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.corner{
+
+position:absolute;
+
+top:25px;
+
+right:30px;
+
+font-size:12px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#7b9d87;
+
+}
+
+.page{
+
+display:none;
+
+animation:fade .8s ease;
+
+}
+
+.page.active{
+
+display:block;
+
+}
+
+h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:54px;
+
+color:#205a46;
+
+font-weight:600;
+
+margin-bottom:30px;
+
+}
+
+p{
+
+font-size:20px;
+
+line-height:1.9;
+
+color:#355e4b;
+
+margin-bottom:18px;
+
+}
+
+button{
+
+margin-top:30px;
+
+background:#2e8b57;
+
+color:white;
+
+border:none;
+
+padding:16px 34px;
+
+font-weight:500; letter-spacing:.3px;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-family:'Inter',sans-serif;
+
+}
+
+button:hover{
+
+background:#256f47;
+
+transform:translateY(-3px);
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(18px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.leaf{
+
+position:absolute;
+
+font-size:24px;
+
+opacity:.08;
+
+animation:float 18s linear infinite;
+
+}
+
+.leaf:nth-child(1){
+
+left:8%;
+
+top:85%;
+
+animation-delay:0s;
+
+}
+
+.leaf:nth-child(2){
+
+left:82%;
+
+top:90%;
+
+animation-delay:6s;
+
+}
+
+.leaf:nth-child(3){
+
+left:55%;
+
+top:95%;
+
+animation-delay:12s;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+}
+
+}
+
+.signature{
+
+margin-top:40px;
+
+font-size:16px;
+
+color:#7a9684;
+
+font-style:italic;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="leaf">🌿</div>
+<div class="leaf">🍃</div>
+<div class="leaf">🌱</div>
+
+<div class="card">
+
+<div class="corner">
+
+made with love • august 2026
+
+</div>
+
+<!-- PAGE 1 -->
+
+<div class="page active">
+
+<h1>Hi, My Love.</h1>
+
+<p>
+
+This isn't for our anniversary.
+
+</p>
+
+<p>
+
+It's not your birthday.
+
+</p>
+
+<p>
+
+And it's definitely not because I needed a reason.
+
+</p>
+
+<p>
+
+I just woke up today...
+
+and wanted to make something
+
+that would make you smile.
+
+</p>
+
+<button onclick="nextPage()">
+
+Open my letter 💚
+
+</button>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="page">
+
+<h1>Ordinary Days</h1>
+
+<p>
+
+People think love lives
+
+inside grand gestures.
+
+</p>
+
+<p>
+
+I don't think so.
+
+</p>
+
+<p>
+
+I think love is remembering
+
+how you like your coffee.
+
+</p>
+
+<p>
+
+Saving a meme because
+
+"I know she'll laugh."
+
+</p>
+
+<p>
+
+Or seeing something beautiful
+
+and immediately wishing
+
+you were there.
+
+</p>
+
+<button onclick="nextPage()">
+
+Next →
+
+</button>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="page">
+
+<h1>Something I Hope You Know</h1>
+
+<p>
+
+I'm still learning.
+
+</p>
+
+<p>
+
+Still growing.
+
+</p>
+
+<p>
+
+Still becoming
+
+the partner I want to be.
+
+</p>
+
+<p>
+
+I won't always get everything right.
+
+</p>
+
+<p>
+
+But I hope one thing
+
+never changes—
+
+</p>
+
+<p>
+
+I'll never stop trying.
+
+</p>
+
+<button onclick="nextPage()">
+
+Next →
+
+</button>
+
+</div>
+
+  <!-- PAGE 4 -->
+
+<div class="page">
+
+<h1>My Favourite Future</h1>
+
+<p>
+
+When I think about the future...
+
+</p>
+
+<p>
+
+I don't imagine perfection.
+
+</p>
+
+<p>
+
+I imagine grocery shopping together.
+
+</p>
+
+<p>
+
+Arguing over what to eat.
+
+</p>
+
+<p>
+
+Watching movies we'll probably never finish.
+
+</p>
+
+<p>
+
+Growing older...
+
+without ever growing apart.
+
+</p>
+
+<button onclick="nextPage()">
+
+Next →
+
+</button>
+
+</div>
+
+<!-- PAGE 5 -->
+
+<div class="page">
+
+<h1>Thank You.</h1>
+
+<p>
+
+Thank you...
+
+</p>
+
+<p>
+
+For loving me.
+
+</p>
+
+<p>
+
+For laughing with me.
+
+</p>
+
+<p>
+
+For believing in us.
+
+</p>
+
+<p>
+
+Being with you
+
+makes me want
+
+to become a kinder,
+
+stronger,
+
+better partner every single day.
+
+</p>
+
+<button onclick="nextPage()">
+
+One Last Page 💚
+
+</button>
+
+</div>
+
+<!-- PAGE 6 -->
+
+<div class="page">
+
+<h1>Just One More Thing...</h1>
+
+<p>
+
+I hope,
+
+years from now,
+
+we somehow find this page again.
+
+</p>
+
+<p>
+
+And smile.
+
+</p>
+
+<p>
+
+Because everything written here
+
+will still be true.
+
+</p>
+
+<p>
+
+You are my favourite person.
+
+</p>
+
+<p>
+
+My safest place.
+
+</p>
+
+<p>
+
+And the best part
+
+of my ordinary days.
+
+</p>
+
+<div class="signature">
+
+With all my love,<br>
+
+Swarnali 💚
+
+</div>
+
+<button onclick="finishLetter()">
+
+Close the Letter 🌿
+
+</button>
+
+</div>
+
+<!-- FINAL PAGE -->
+
+<div class="page">
+
+<h1>💚</h1>
+
+<p>
+
+This page will always be here.
+
+</p>
+
+<p>
+
+Just like me.
+
+</p>
+
+<p>
+
+Whenever life gets noisy,
+
+or difficult,
+
+or beautifully ordinary...
+
+</p>
+
+<p>
+
+Come back here.
+
+</p>
+
+<p>
+
+And remember—
+
+</p>
+
+<p style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#205a46;">
+
+You are loved.
+
+Every single day.
+
+</p>
+
+<div class="signature">
+
+04 August 2026 🌿
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const pages=document.querySelectorAll(".page");
+
+let current=0;
+
+function nextPage(){
+
+pages[current].classList.remove("active");
+
+current++;
+
+pages[current].classList.add("active");
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+function finishLetter(){
+
+pages[current].classList.remove("active");
+
+current++;
+
+pages[current].classList.add("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
